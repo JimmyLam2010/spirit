@@ -1,0 +1,671 @@
+.header{
+    width:100%;
+    background:#000;
+    padding-top:45px;
+    overflow: hidden;
+}
+.logo{
+    float:left;
+    font-size:24px;
+    margin-bottom:30px;
+    color:#fff;
+    font-family: Ltb;
+    text-transform: uppercase;
+}
+
+.nav{
+    float:right;
+}
+
+.nav a{
+    height:60px;
+    line-height:60px;
+    display: inline-block;
+    padding:0 15px;
+    text-transform: uppercase;
+    color:#fff;
+    font-size:24px;
+    font-family: Osl;
+    border-bottom: 3px solid rgba(0,0,0,0);
+    transition: border .3s ease-in-out;
+}
+
+.nav a:hover{
+    border-bottom:3px solid #fcac45;
+}
+
+.mobile{
+    float:right;
+    width:50px;
+    height:50px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    transform:rotate(0deg);
+}
+
+.mobile span{
+    display: block;
+    width:80%;
+    height:5px;
+    background:#fff;
+    margin:9px auto 0;
+}
+
+#showMenu{
+    display: none;
+}
+
+#showMenu:checked ~ .nav{
+    display: block;
+}
+
+#showMenu:checked ~ .mobile{
+    transform:rotate(90deg);
+}
+
+@media screen and (min-width:1040px)
+{
+    .mobile{
+        display: none;
+    }
+}
+
+@media screen and (max-width:1040px)
+{
+    .nav{
+        display: none;
+        width:100%;
+    }
+
+    .nav a{
+        display: block;
+        width:100%;
+        text-align:center;
+        transition: all .3s ease-in-out;
+        transform:scale(1);
+    }
+
+    .nav a:hover{
+        transform:scale(1.2);
+    }
+}
+
+/* header end */
+.banner{
+    width:100%;
+    overflow: hidden;
+    padding-bottom:90px;
+    position: relative;
+}
+
+.banner_content{
+    margin-top:140px;
+}
+
+.banner_title{
+    color:#999999;
+    font-size:44px;
+    line-height: 72px;
+    font-family: Osl;
+}
+
+.banner_title span{
+    color: #fcac45;
+    font-family: Osb;
+}
+
+.banner_desc{
+    width:80%;
+    font-size:20px;
+    margin:0 auto;
+    margin-bottom:250px;
+}
+
+.banner_desc span{
+    font-family: Osb;
+    color:#c3c3c3;
+}
+
+.more{
+    display: block;
+    width:50px;
+    height:50px;
+    margin:0 auto;
+    background:url('../images/more.png') no-repeat center;
+    border-radius: 100%;
+    border:1px solid #c3c3c3;
+    overflow: hidden;
+}
+
+#video{
+    position: absolute;
+    left:0;
+    min-width:100%;
+    min-height:100%;
+    width:auto;
+    height:auto;
+    z-index:-1000;
+}
+
+/* banner end */
+
+.about{
+    background:#fff;
+    width:100%;
+    padding-top:95px;
+    padding-bottom:95px;
+    background:url('../images/about_bg.png') no-repeat 100px 100px;
+    background-size: 50%;
+}
+
+.about_content{
+    width:50%;
+    float:right;
+    text-align:left;
+}
+
+.about_content h2,.about_content h6{
+    text-align: left;
+}
+
+.about_content h6{
+    font-size:20px;
+    text-transform: uppercase;
+    font-family: Osl;
+    color:#636363;
+}
+
+.about_content h2{
+    font-family: Osl;
+    font-size:34px;
+    text-transform: uppercase;
+    line-height:55px;
+    height:55px;
+    margin-bottom:32px;
+
+}
+
+.about_content h2 span:first-child{
+    border-bottom: 3px solid #fcac45;
+}
+
+.about_content h2 span:last-child{
+    font-family: Osb;
+}
+
+.about_content p{
+    width:70%;
+    text-indent: 0px;
+    text-align:left;
+    font-size:18px;
+    font-family: Osl;
+    margin-bottom:47px;
+}
+
+.about_list{
+    margin-bottom:47px;
+}
+
+.about_list li{
+    height:35px;
+    line-height:35px;
+    font-size:16px;
+    font-family: Osl;
+    font-weight: bolder;
+    background:url('../images/about_li.png') no-repeat left center;
+    text-indent: 25px;
+    color:#7b7b7b;
+}
+
+.about_list li span{
+    font-family: Ossb;
+}
+
+.about_more{
+    padding:10px 20px;
+    padding-left:40px;
+    border:1px solid #7f7f7f;
+    border-radius: 3px;
+    font-size:12px;
+    text-transform: uppercase;
+    font-family: Ossb;
+    color:#616161;
+    background:url('../images/btn_bg.png') no-repeat 18px center;
+    text-align: center;
+    transition: all .3s ease-in-out;
+}
+
+.about_more:hover{
+    background:rgba(127,127,127,.7) url('../images/btn_bg.png') no-repeat 18px center;
+    text-align: center;
+}
+
+@media screen and (max-width:990px){
+    .about{
+        background:none;
+    }
+
+    .about_content{
+        width:100%;
+    }
+
+    .about_content h2{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .about_content p{
+        width:100%;
+    }
+}
+
+.team{
+    background-color: #070707;
+    padding-top: 100px;
+    padding-bottom: 84px;
+}
+
+.team .title{
+    color: #ffffff;
+}
+
+.title h1{
+    font-size: 44px;
+    font-family: Osb;  
+}
+
+.title span{
+    font-family: Osl;
+}
+
+.title .first-line{
+    border: 0;
+    width: 97px;
+    height: 3px;
+    background-color: #fcac45;
+}
+
+.title .second-line{
+    border: 0;
+    width: 66px;
+    height: 3px;
+    background-color: #fdc57c;
+}
+
+.team .members{
+    margin-top: 90px;
+    text-align: center;
+}
+
+.team .members ul li{
+    display: inline-block;
+    width: 24%;
+}
+
+.member_photo{
+    width: 127px;
+    height: 127px;
+    background-color: #d7d7d7;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.member_name{
+    margin-top: 20px;
+}
+
+.member_name p:first-child{
+    font-size: 20px;
+    font-family: Osb;
+    color: #ffffff;
+}
+
+.member_name p:last-child{
+    font-size: 16px;
+    font-family: Osl;
+    color: #ffffff;
+}
+
+.member_info{
+    margin-top: 30px;
+    font-size: 14px;
+    font-family: Osl;
+    color: #ffffff;
+}
+
+.switch{
+    margin-top: 70px;
+    text-align: center;
+}
+
+.switch ul li{
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    background-color: #ffffff;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.switch ul li:hover{
+    background-color: #fcac45;
+}
+
+.switch ul li:first-child{
+    background-color: #fcac45;
+}
+
+.switch ul li:last-child{
+    margin:0;
+}
+
+.service{
+    background-color: #ffffff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.service .title{
+    color: #333333;
+}
+
+.intro{
+    font-size: 16px;
+    font-family: Osi;
+    text-align: center;
+    margin: 40px auto 0;
+}
+
+.service_list{
+    margin: 128px auto 0;
+}
+
+.service_list ul li{
+    display: inline-block;
+    width: 24%;
+}
+
+.service_icon{
+    width: 125px;
+    height: 125px;
+    margin: 0 auto;
+}
+
+.service_title{
+    font-size: 25px;
+    font-family: Osb;
+    text-align: center;
+    margin-top: 28px;
+}
+
+.service_info{
+    font-size: 14px;
+    font-family: Osl;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media screen and (max-width:760px){
+    .team .members ul li{
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .service_list ul li{
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .member_photo{
+        float: left;
+    }
+
+    .service_icon{
+        float: left;
+    }
+}
+
+.client{
+    background-color: #070707;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.client .title{
+    color: #ffffff;
+}
+
+.client_list{
+    width: 85%;
+    margin: 100px auto 0;
+    text-align: center;
+}
+
+.client_list ul li{
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.client_list ul li:last-child{
+    margin: 0;
+}
+
+@media screen and (max-width:1200px){
+    .client_list ul li{
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+}
+
+.work{
+    background-color: #ffffff;
+    padding-top: 100px;
+}
+
+.work_filter{
+    margin-top: 108px;
+}
+
+.filter_title{
+    float: left;
+    font-size: 18px;
+    font-family: Ossb;
+    line-height: 18px;
+}
+
+.filter_list ul{
+    float: right;
+}
+
+.filter_list ul li{
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+    font-size: 18px;
+    font-family: Osl;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-right: 1px solid #333333;
+    cursor: pointer;
+}
+
+.filter_list ul li:hover{
+    font-family: Ossb;
+}
+
+.filter_list ul li:first-child{
+    font-family: Ossb;
+}
+
+.filter_list ul li:last-child{
+    padding-right: 0;
+    border: 0;
+}
+
+.work_list{
+    margin-top: 50px;
+}
+
+.work_list ul{
+    text-align: center;
+    column-count: 4
+}
+
+.work_list ul li{
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 30px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.work_list ul li .work_img{
+    width: 100%;
+    height: 100%;
+}
+
+.work_list ul li .work_img img{
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width:610px){
+    .filter_list ul{
+        margin-top: 20px;
+        float: left;
+    }
+
+    .filter_list ul li:first-child{
+        padding-left: 0;
+    }
+}
+
+.testimonial{
+    background-color: #070707;
+    padding-top:100px;
+    padding-bottom: 100px;
+}
+
+.testimonial .title{
+    color: #ffffff;
+}
+
+.testimonial_content{
+    margin-top: 100px;
+    font-size: 18px;
+    font-family: Ossb;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.testimonial_content .testimonial_author{
+    margin-top: 50px;
+    text-transform: capitalize;
+}
+
+.testimonial_content .testimonial_author span{
+    font-family: Osl;
+}
+
+.contact{
+    background-color: #ffffff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.contact_intro{
+    font-size: 16px;
+    font-family: Osi;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contact form{
+    margin-top: 100px;
+}
+
+form label{
+    font-size: 14px;
+    font-family: Osl;
+}
+
+form input{
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+form p{
+    text-align: left;
+}
+
+form label span{
+    color: #de2626;
+}
+
+.coloum-2{
+    column-count: 2;
+}
+
+.coloum-2 input{
+    width: 100%;
+}
+
+.contact_message textarea{
+    width: 100%;
+    height: 163px;
+}
+
+form input[type="submit"]{
+    width: 10%;
+    height: 40px;
+    background-color: #fcac45;
+    font-size: 16px;
+    font-family: Ossb;
+    color: #ffffff;
+    border: none;
+    float: right;
+}
+
+.footer{
+    background-color: #222222;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.copyright{
+    font-size: 12px;
+    line-height: 31px;
+    color: #ffffff;
+    font-family: Osl;
+    float: left;
+}
+
+.copyright span{
+    font-family: Osb;
+}
+
+.share{
+    float: right;
+}
+
+.share ul li{
+    display: inline-block;
+    margin-right: 12px;
+}
+
+.share ul li:last-child{
+    margin: 0;
+}
+
+@media screen and (max-width:518px){
+    .share{
+        margin-top: 30px;
+        float: left;
+    }
+}
